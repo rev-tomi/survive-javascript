@@ -5,7 +5,7 @@ demo.evalConditional = function(txt) {
     result = "true";
   }
   this.appendText('"' + txt + '" => ' + result + '<br>');
-}
+};
 
 demo.appendText('The confusing ones:<br>');
 demo.evalConditional("'' == '0'");
