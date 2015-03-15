@@ -1,3 +1,5 @@
+"use strict";
+
 demo.scopes = function() {
   var a = 0;
   for (var i = 0; i < 10; i++) {

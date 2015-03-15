@@ -2,6 +2,7 @@
   "name" : "survive-javascript",
   "description" : "practical tips extracted from Crockfords book",
   "dependencies" : {
-    "jshint" : "2.6.x"
+    "jshint" : "2.6.x",
+    "jslint": ">=0.3.4"
   }
 }
