@@ -1,0 +1,7 @@
+{
+  "name" : "survive-javascript",
+  "description" : "practical tips extracted from Crockfords book",
+  "dependencies" : {
+    "jshint" : "2.6.x"
+  }
+}
