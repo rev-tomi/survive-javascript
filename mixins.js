@@ -37,17 +37,18 @@ demo.addCounterMixin = function(obj) {
   }
 }
 
-// only for demo: global variables
-var frici = demo.createCat("Frici");
-var mici = demo.createCat("Mici");
+demo.impl = function() {
+  var frici = demo.createCat("Frici");
+  var mici = demo.createCat("Mici");
 
-demo.addComparableMixin(frici);
-demo.addComparableMixin(mici);
+  demo.addComparableMixin(frici);
+  demo.addComparableMixin(mici);
 
-demo.appendText("is frici smaller than mici? " + frici.smaller(mici) + "<br>");
-demo.appendText("is frici greater than mici? " + frici.greater(mici) + "<br>");
+  demo.appendText("is frici smaller than mici? " + frici.smaller(mici) + "<br>");
+  demo.appendText("is frici greater than mici? " + frici.greater(mici) + "<br>");
 
-demo.addCounterMixin(frici);
-frici.increment();
-frici.increment();
-demo.appendText("frici counter: " + frici.getCount() + "<br>");
+  demo.addCounterMixin(frici);
+  frici.increment();
+  frici.increment();
+  demo.appendText("frici counter: " + frici.getCount() + "<br>");
+}(); // immediately invoked function, no return => not polluting the demo object
